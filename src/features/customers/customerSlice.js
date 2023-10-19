@@ -1,3 +1,5 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 const initialStateCustomer = {
   fullName: "",
   nationalId: "",
@@ -31,5 +33,5 @@ export function createCustomer(fullName, nationalId) {
 }
 
 export function updateName(fullName) {
-  return { type: "account/updateName", payload: fullName };
+  return { type: "customer/updateName", payload: fullName };
 }
